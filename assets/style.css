@@ -899,12 +899,6 @@ body.menu-open .mascot{display:none}
 .btn-light{box-shadow:0 5px 0 #9FC9D3}
 /* hero badges: rounded squares */
 .badge{border-radius:22px;border-width:2px;width:118px;height:108px}
-/* van-style livery stripes */
-.livery{position:absolute;left:0;right:0;height:26px;pointer-events:none;z-index:4}
-.livery::before,.livery::after{content:"";position:absolute;left:-5%;right:-5%;height:8px;border-radius:8px;transform:skewY(-1.2deg)}
-.livery::before{top:0;background:var(--gold)}
-.livery::after{top:13px;background:#0CCCD3}
-.hero .livery{bottom:70px}
 /* why cards: square icon tiles, side accent */
 .wcard{border-width:2px;border-left-width:8px}
 .wi{border-radius:18px;border-width:2px}
@@ -919,4 +913,7 @@ body.menu-open .mascot{display:none}
 .pcard,.tcard{border-width:2px}
 .frame,.about .frame{border-width:3px!important;border-radius:22px!important}
 .about .frame{box-shadow:12px 12px 0 #0CCCD3,var(--soft)!important}
-@media (max-width:600px){.hero .livery{bottom:40px}.badge{width:100px;height:96px;border-radius:18px}}
+@media (max-width:600px){.badge{width:100px;height:96px;border-radius:18px}}
+
+@keyframes ring2{0%{box-shadow:0 5px 0 #B98700,0 0 0 0 rgba(253,200,6,.55)}70%,100%{box-shadow:0 5px 0 #B98700,0 0 0 16px rgba(253,200,6,0)}}
+.hero .btn-gold{animation:ring2 2.4s ease-out 2s infinite}

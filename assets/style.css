@@ -849,3 +849,4 @@ body.menu-open .mbar,body.menu-open .bbar{display:none}
 body.menu-open .mascot{display:none}
 @media (prefers-reduced-motion:reduce){.mascot a{animation:none}}
 @media (min-width:961px){.fgen{display:none}}
+.about .frame{max-width:440px;margin-inline:auto}

@@ -850,3 +850,27 @@ body.menu-open .mascot{display:none}
 @media (prefers-reduced-motion:reduce){.mascot a{animation:none}}
 @media (min-width:961px){.fgen{display:none}}
 .about .frame{max-width:440px;margin-inline:auto}
+
+/* mobile hardening */
+@media (max-width:960px){
+  .show .grid,.quote .grid,.about .grid,.faqgrid{grid-template-columns:minmax(0,1fr)}
+  .form .btn,.quote .btn{white-space:normal;text-align:center;line-height:1.2}
+}
+@media (max-width:600px){
+  .btn-lg{font-size:18px;padding:16px 22px}
+  .quote .cta .btn,.hero .cta .btn{width:100%}
+  .fcta .cta{width:100%}.fcta .cta .btn{flex:1}
+  .fcontact a span{word-break:break-word;min-width:0}
+}
+@media (max-width:600px){
+  .fcta{flex-direction:column;align-items:stretch;text-align:left}
+  .fcta .cta{display:flex;flex-direction:column;gap:10px}
+  .fcta .cta .btn{width:100%;flex:none}
+  .fcontact a span{font-size:14px;overflow-wrap:anywhere}
+  .hero .checks{gap:8px 10px}
+}
+@media (min-width:601px) and (max-width:960px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+  .pgrid .pcard:last-child{grid-column:1/-1;max-width:calc(50% - 12px);justify-self:center;width:100%}
+}

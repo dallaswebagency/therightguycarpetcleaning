@@ -874,3 +874,49 @@ body.menu-open .mascot{display:none}
   .pgrid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
   .pgrid .pcard:last-child{grid-column:1/-1;max-width:calc(50% - 12px);justify-self:center;width:100%}
 }
+
+/* ===== The Right Guy theme: own look on the shared layout ===== */
+:root{--r:18px;--pop:0 5px 0 #021A33}
+/* headlines: clean, no bubbly outline */
+.pop,.hero .pop,.pop.white{-webkit-text-stroke:0!important;color:#fff;text-shadow:0 6px 24px rgba(0,0,0,.35)!important;letter-spacing:-.5px}
+.hero h1 span:nth-child(2){color:var(--gold)}
+.hero h1{line-height:.98}
+.h2{letter-spacing:-.5px}
+.quote h2{text-shadow:none}
+/* kicker + eyebrow */
+.kicker{transform:none;border:0;border-radius:999px;padding:8px 18px 8px 14px;box-shadow:0 4px 0 #C99C00}
+.kicker::before{content:"\2605";margin-right:8px;color:#C8102E}
+.eyebrow{background:#DAF3F3;color:#027C8F;padding:6px 14px;border-radius:999px;font-size:13px}
+.eyebrow::after{display:none}
+.band .eyebrow,.how .eyebrow,.quote .eyebrow{background:rgba(255,255,255,.12);color:var(--gold)}
+/* buttons: squarer, no outline */
+.btn{border:0;border-radius:14px;box-shadow:0 5px 0 rgba(2,26,51,.9)}
+.btn:hover{box-shadow:0 3px 0 rgba(2,26,51,.9)}
+.btn-gold{background:linear-gradient(#FFD84D,#F5B800);box-shadow:0 5px 0 #B98700}
+.btn-gold:hover{box-shadow:0 3px 0 #B98700}
+.btn-primary{background:linear-gradient(#16C9D0,#0395AB);box-shadow:0 5px 0 #026A7A}
+.btn-primary:hover{box-shadow:0 3px 0 #026A7A}
+.btn-light{box-shadow:0 5px 0 #9FC9D3}
+/* hero badges: rounded squares */
+.badge{border-radius:22px;border-width:2px;width:118px;height:108px}
+/* van-style livery stripes */
+.livery{position:absolute;left:0;right:0;height:26px;pointer-events:none;z-index:4}
+.livery::before,.livery::after{content:"";position:absolute;left:-5%;right:-5%;height:8px;border-radius:8px;transform:skewY(-1.2deg)}
+.livery::before{top:0;background:var(--gold)}
+.livery::after{top:13px;background:#0CCCD3}
+.hero .livery{bottom:70px}
+/* why cards: square icon tiles, side accent */
+.wcard{border-width:2px;border-left-width:8px}
+.wi{border-radius:18px;border-width:2px}
+.wcard .wn{opacity:.22}
+/* service cards */
+.card{border-width:2px}
+.card .ico{border-radius:16px;border-width:2px}
+.card .ph img{border-radius:16px 16px 0 0}
+/* steps: rounded square badges */
+.step .n{border-radius:20px}
+/* pricing/testimonial cards */
+.pcard,.tcard{border-width:2px}
+.frame,.about .frame{border-width:3px!important;border-radius:22px!important}
+.about .frame{box-shadow:12px 12px 0 #0CCCD3,var(--soft)!important}
+@media (max-width:600px){.hero .livery{bottom:40px}.badge{width:100px;height:96px;border-radius:18px}}

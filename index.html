@@ -1,556 +1,364 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Right Guy Carpet Cleaning Inc | Carpet, Rug, Tile &amp; Upholstery Cleaning</title>
-<meta name="description" content="The Right Guy Carpet Cleaning Inc. Residential and commercial carpet cleaning, stain removal, area rugs, tile and grout, leather and furniture cleaning. Free written estimates. Call (630) 264-4369.">
-<link rel="icon" href="images/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --navy:#052C51; --ink:#021A33; --yellow:#FDC806; --yellow-soft:#FFF3C2;
-  --teal:#0CCCD3; --teal-deep:#0395AB; --mist:#EEF8F8; --cream:#FBFAF4;
-  --text:#2A3B4D; --muted:#5D6F80; --line:#D6E6EA;
-  --r:22px; --shadow:0 18px 50px -18px rgba(2,26,51,.35);
-  --display:'Bricolage Grotesque',system-ui,sans-serif; --body:'Figtree',system-ui,sans-serif;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--body);color:var(--text);background:var(--cream);line-height:1.6;font-size:17px;overflow-x:hidden}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1220px,92%);margin-inline:auto}
-h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.05;letter-spacing:-.02em}
-.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep)}
-.eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--yellow)}
-.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;padding:1rem 1.6rem;border-radius:999px;transition:.25s;font-size:1rem;border:2px solid transparent;cursor:pointer;font-family:var(--body)}
-.btn svg{width:18px;height:18px}
-.btn-yellow{background:var(--yellow);color:var(--ink);box-shadow:0 6px 0 #C99C00}
-.btn-yellow:hover{transform:translateY(-2px);box-shadow:0 8px 0 #C99C00}
-.btn-navy{background:var(--navy);color:#fff}
-.btn-navy:hover{background:var(--teal-deep)}
-.btn-ghost{border-color:currentColor}
-.btn-ghost:hover{background:rgba(255,255,255,.08)}
-
-/* promo ribbon */
-.ribbon{background:var(--ink);color:#fff;font-size:.9rem;overflow:hidden;white-space:nowrap}
-.ribbon-track{display:inline-flex;gap:3rem;padding:.6rem 0;animation:slide 32s linear infinite}
-.ribbon span{display:inline-flex;align-items:center;gap:.7rem}
-.ribbon b{color:var(--yellow)}
-.ribbon i{width:8px;height:8px;background:var(--teal);border-radius:50%;display:inline-block}
-@keyframes slide{to{transform:translateX(-50%)}}
-
-/* header */
-header{position:sticky;top:0;z-index:50;background:rgba(251,250,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:.55rem 0}
-.brand{flex:none}
-.brand img{height:84px;width:auto}
-.menu{display:flex;gap:1.25rem;list-style:none;font-weight:600;font-size:.92rem;color:var(--navy);white-space:nowrap}
-.menu>li{position:relative}
-.menu a{padding:.5rem 0;display:inline-block;position:relative}
-.menu>li>a::after{content:"";position:absolute;left:0;bottom:2px;height:3px;width:0;background:var(--yellow);border-radius:3px;transition:.25s}
-.menu>li>a:hover::after{width:100%}
-.sub{position:absolute;top:100%;left:-1rem;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:.6rem;min-width:230px;list-style:none;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s}
-.menu li:hover .sub{opacity:1;visibility:visible;transform:none}
-.sub a{display:block;padding:.55rem .8rem;border-radius:10px;font-weight:500}
-.sub a:hover{background:var(--mist);color:var(--teal-deep)}
-.nav-cta{display:flex;align-items:center;gap:.8rem}
-.phone-pill{display:flex;align-items:center;gap:.6rem;font-weight:700;color:var(--navy);white-space:nowrap}
-.nav-cta .btn{white-space:nowrap;padding:.85rem 1.4rem}
-.phone-pill .ic{width:42px;height:42px;border-radius:50%;background:var(--teal);display:grid;place-items:center;color:var(--ink)}
-.phone-pill small{display:block;font-weight:500;font-size:.75rem;color:var(--muted);line-height:1}
-.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
-.burger span{display:block;height:3px;background:var(--navy);margin:6px 8px;border-radius:3px}
-
-/* hero */
-.hero{position:relative;padding:4.5rem 0 6rem;overflow:hidden}
-.hero::before{content:"";position:absolute;right:-12%;top:-30%;width:780px;height:780px;border-radius:50%;background:radial-gradient(circle,rgba(12,204,211,.22),transparent 65%)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center;position:relative}
-.hero h1{font-size:clamp(2.8rem,6vw,5.3rem);font-weight:800;margin:1.2rem 0 1.4rem}
-.hero h1 .hl{position:relative;color:var(--navy);white-space:nowrap}
-.hero h1 .hl svg{position:absolute;left:0;bottom:-.12em;width:100%;height:.35em}
-.hero h1 em{font-style:normal;color:var(--teal-deep)}
-.hero p.lead{font-size:1.2rem;max-width:34rem;color:var(--muted)}
-.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem}
-.hero-actions .btn-ghost{color:var(--navy)}
-.hero-actions .btn-ghost:hover{background:var(--navy);color:#fff}
-.hero-meta{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2.6rem;font-weight:600;color:var(--navy);font-size:.95rem}
-.hero-meta span{display:flex;align-items:center;gap:.5rem}
-.hero-meta svg{width:20px;height:20px;color:var(--teal-deep)}
-.hero-visual{position:relative}
-.hero-photo{border-radius:40px;overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow);border:8px solid #fff}
-.hero-photo img{width:100%;height:100%;object-fit:cover}
-.hero-ring{position:absolute;inset:-22px -22px auto auto;width:150px;height:150px;border-radius:50%;border:3px dashed var(--teal);animation:spin 30s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.ticket{position:absolute;left:-70px;bottom:46px;background:var(--yellow);color:var(--ink);border-radius:18px;padding:1.2rem 1.4rem 1.2rem 1.6rem;width:280px;box-shadow:var(--shadow);transform:rotate(-4deg)}
-.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:26px;height:26px;border-radius:50%;background:var(--cream);transform:translateY(-50%)}
-.ticket::before{left:-13px}.ticket::after{right:-13px}
-.ticket .big{font-family:var(--display);font-weight:800;font-size:3rem;line-height:1}
-.ticket .big small{font-size:1.2rem}
-.ticket p{font-weight:700;font-size:.98rem;border-top:2px dashed rgba(2,26,51,.35);margin-top:.6rem;padding-top:.6rem}
-.ticket span{display:block;font-size:.72rem;font-weight:500;line-height:1.35;margin-top:.35rem;opacity:.8}
-.badge-float{position:absolute;right:-24px;top:42%;background:#fff;border-radius:18px;padding:.9rem 1.1rem;box-shadow:var(--shadow);display:flex;gap:.7rem;align-items:center;font-weight:700;color:var(--navy);font-size:.92rem;line-height:1.2}
-.badge-float .dot{width:44px;height:44px;border-radius:14px;background:var(--navy);color:var(--yellow);display:grid;place-items:center}
-
-/* the four rights */
-.rights{background:var(--navy);color:#fff;padding:7rem 0;position:relative;overflow:hidden}
-.rights::after{content:"";position:absolute;inset:auto -10% -1px -10%;height:80px;background:var(--cream);border-radius:50% 50% 0 0/100% 100% 0 0}
-.rights-head{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:4rem}
-.rights h2{color:#fff;font-size:clamp(2.2rem,4.4vw,3.6rem)}
-.rights h2 span{color:var(--yellow)}
-.rights-head p{color:#BCD3E3;font-size:1.1rem}
-.rights .eyebrow{color:var(--teal)}
-.rights-list{list-style:none;border-top:1px solid rgba(255,255,255,.15)}
-.rights-list li{display:grid;grid-template-columns:110px 1fr 1.1fr;gap:2rem;align-items:center;padding:2rem 0;border-bottom:1px solid rgba(255,255,255,.15);transition:.3s}
-.rights-list li:hover{padding-left:1.2rem;background:linear-gradient(90deg,rgba(12,204,211,.1),transparent)}
-.rights-list .num{font-family:var(--display);font-size:1rem;color:var(--teal);font-weight:700}
-.rights-list h3{color:#fff;font-size:clamp(1.8rem,3.4vw,2.8rem);font-weight:700}
-.rights-list h3 b{color:var(--yellow);font-weight:800}
-.rights-list p{color:#C9DAE6}
-
-/* services index */
-.services{padding:7rem 0 6rem}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.5rem;flex-wrap:wrap}
-.sec-head h2{font-size:clamp(2.2rem,4.4vw,3.6rem);max-width:40rem;margin-top:.8rem}
-.sec-head p{max-width:26rem;color:var(--muted)}
-.svc-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:start}
-.svc-list{list-style:none}
-.svc-list li{border-bottom:1px solid var(--line)}
-.svc-list button{all:unset;cursor:pointer;display:grid;grid-template-columns:52px 1fr 36px;gap:1rem;align-items:center;width:100%;padding:1.25rem .4rem;transition:.25s}
-.svc-list .n{font-family:var(--display);font-weight:700;color:var(--teal-deep);font-size:.95rem}
-.svc-list .t{font-family:var(--display);font-weight:700;font-size:clamp(1.25rem,2vw,1.6rem);color:var(--ink)}
-.svc-list .ar{width:36px;height:36px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;transition:.25s;color:var(--navy)}
-.svc-list .ar svg{width:16px;height:16px}
-.svc-list .d{max-height:0;overflow:hidden;transition:max-height .35s ease;padding-left:68px;color:var(--muted)}
-.svc-list .d p{padding:0 2.5rem 1.3rem 0}
-.svc-list li.active .ar{background:var(--yellow);border-color:var(--yellow);transform:rotate(45deg)}
-.svc-list li.active .t{color:var(--teal-deep)}
-.svc-list li.active .d{max-height:180px}
-.svc-panel{position:sticky;top:120px}
-.svc-frame{position:relative;z-index:1;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow)}
-.svc-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:.5s}
-.svc-frame img.show{opacity:1;transform:none}
-.svc-frame-wrap{position:relative}
-.svc-frame-wrap::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:3px solid var(--teal);border-radius:var(--r)}
-.svc-note{margin-top:2.4rem;background:var(--yellow-soft);border-radius:18px;padding:1.4rem 1.5rem;display:flex;gap:1rem;align-items:center}
-.svc-note .ic{flex:none;width:52px;height:52px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;color:var(--ink)}
-.svc-note b{font-family:var(--display);font-size:1.15rem;color:var(--ink);display:block}
-.svc-note span{font-size:.95rem;color:var(--text)}
-
-/* stains */
-.stains{padding:2rem 0 7rem}
-.stain-card{background:#fff;border-radius:36px;display:grid;grid-template-columns:.95fr 1.05fr;overflow:hidden;box-shadow:0 30px 60px -40px rgba(2,26,51,.4);border:1px solid var(--line)}
-.stain-img{position:relative;min-height:440px}
-.stain-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.stain-body{padding:4rem 3.6rem}
-.stain-body h2{font-size:clamp(2rem,3.6vw,3rem);margin:.8rem 0 1rem}
-.stain-body>p{color:var(--muted);margin-bottom:2rem}
-.drops{display:flex;flex-wrap:wrap;gap:.8rem}
-.drop{display:inline-flex;align-items:center;gap:.55rem;padding:.65rem 1.1rem .65rem .7rem;border-radius:999px;background:var(--mist);font-weight:700;color:var(--navy);transition:.25s}
-.drop:hover{background:var(--navy);color:#fff}
-.drop i{width:22px;height:22px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);display:inline-block}
-
-/* door / how we work */
-.door{position:relative;padding:0 0 7rem}
-.door-banner{position:relative;border-radius:36px;overflow:hidden;min-height:540px;display:flex;align-items:flex-end}
-.door-banner>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.door-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,26,51,0) 20%,rgba(2,26,51,.92) 85%)}
-.door-content{position:relative;z-index:2;padding:3.5rem;width:100%;display:grid;grid-template-columns:1fr 1.25fr;gap:3rem;align-items:end}
-.door h2{color:#fff;font-size:clamp(2rem,3.8vw,3.2rem)}
-.door h2 span{color:var(--yellow)}
-.door .eyebrow{color:var(--teal)}
-.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.6rem}
-.checks li{display:flex;gap:.7rem;color:#E6F0F6;font-weight:500;line-height:1.4}
-.checks svg{flex:none;width:24px;height:24px;color:var(--ink);background:var(--teal);border-radius:50%;padding:4px}
-
-/* deals */
-.deals{padding:0 0 7rem}
-.deals-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1.5rem}
-.deal{border-radius:28px;padding:2.4rem;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:1rem;min-height:300px}
-.deal h3{font-size:1.8rem}
-.deal p{flex:1}
-.deal-sale{background:var(--yellow);color:var(--ink)}
-.deal-sale .amt{font-family:var(--display);font-weight:800;font-size:clamp(4rem,8vw,6.2rem);line-height:.9;color:var(--ink)}
-.deal-sale .amt sup{font-size:.45em;vertical-align:top}
-.deal-sale small{font-size:.82rem;opacity:.8}
-.deal-sale::after{content:"";position:absolute;right:-80px;bottom:-80px;width:220px;height:220px;border-radius:50%;border:30px solid rgba(255,255,255,.3);z-index:0}
-.deal>*{position:relative;z-index:1}
-.deal-senior{background:var(--teal);color:var(--ink)}
-.deal-video{background:var(--ink);color:#fff}
-.deal-video h3{color:#fff}
-.deal .ico{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:rgba(255,255,255,.4)}
-.deal-video .ico{background:#FF3D3D;color:#fff}
-.deal .ico svg{width:28px;height:28px}
-.deal a.lnk{font-weight:700;display:inline-flex;gap:.5rem;align-items:center;border-bottom:2px solid currentColor;align-self:flex-start;padding-bottom:2px}
-
-/* contact */
-.contact{padding:0 0 7rem}
-.contact-box{background:var(--mist);border-radius:40px;display:grid;grid-template-columns:.9fr 1.1fr;gap:0;overflow:hidden;border:1px solid var(--line)}
-.contact-info{padding:4rem 3.4rem;background:var(--navy);color:#fff;position:relative;overflow:hidden}
-.contact-info::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:var(--teal-deep);opacity:.35;right:-120px;bottom:-120px}
-.contact-info h2{color:#fff;font-size:clamp(2rem,3.6vw,3rem);margin:.8rem 0 1rem}
-.contact-info .eyebrow{color:var(--teal)}
-.contact-info>p{color:#BCD3E3;margin-bottom:2.2rem}
-.c-line{display:flex;gap:1rem;align-items:center;padding:1.1rem 0;border-top:1px solid rgba(255,255,255,.15);position:relative;z-index:1}
-.c-line .ic{width:48px;height:48px;border-radius:14px;background:var(--yellow);color:var(--ink);display:grid;place-items:center;flex:none}
-.c-line small{display:block;color:#9FBBD0;font-size:.8rem}
-.c-line b{font-size:1.1rem;word-break:break-all}
-.form{padding:4rem 3.4rem}
-.form h3{font-size:1.7rem;margin-bottom:.4rem}
-.form>p{color:var(--muted);margin-bottom:1.8rem}
-.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.fgrid .full{grid-column:1/-1}
-label{font-weight:600;font-size:.88rem;color:var(--navy);display:block;margin-bottom:.35rem}
-input,select,textarea{width:100%;padding:.95rem 1rem;border:1.5px solid var(--line);border-radius:14px;font:inherit;background:#fff;color:var(--text);transition:.2s}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal-deep);box-shadow:0 0 0 4px rgba(12,204,211,.18)}
-textarea{min-height:120px;resize:vertical}
-.form .btn{margin-top:1.4rem;width:100%;justify-content:center}
-
-/* footer */
-footer{background:var(--ink);color:#B2C6D6;padding:5rem 0 0;font-size:.95rem}
-.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:3rem}
-.f-logo{background:#fff;border-radius:20px;padding:.8rem 1rem;display:inline-block;margin-bottom:1.2rem}
-.f-logo img{height:84px;width:auto}
-footer h4{color:#fff;font-size:1.1rem;margin-bottom:1.2rem}
-footer ul{list-style:none;display:grid;gap:.55rem}
-footer a:hover{color:var(--yellow)}
-.f-quote{font-family:var(--display);color:#fff;font-size:1.15rem;line-height:1.35;max-width:22rem}
-.f-quote b{color:var(--yellow)}
-.f-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:4rem;padding:1.6rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.88rem}
-.f-bottom a{color:var(--teal)}
-
-/* mobile bar */
-.mbar{display:none}
-
-/* reveal */
-.rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-.rv.in{opacity:1;transform:none}
-
-@media (max-width:1500px){.phone-pill{display:none}}
-@media (max-width:1180px){
-  .menu{display:none}
-  .burger{display:block}
-  .menu.open{display:flex;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:#fff;padding:1rem 4%;box-shadow:var(--shadow)}
-  .menu.open .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;padding:0 0 0 1rem}
-  .menu.open a{padding:.6rem 0}
-  .phone-pill{display:none}
-}
-@media (max-width:960px){
-  .hero-grid,.rights-head,.svc-grid,.stain-card,.door-content,.contact-box,.deals-grid{grid-template-columns:1fr}
-  .hero-visual{max-width:460px;margin:0 auto 1rem}
-  .ticket{left:-10px}
-  .badge-float{right:-6px}
-  .rights-list li{grid-template-columns:60px 1fr;gap:.6rem 1rem}
-  .rights-list li p{grid-column:2}
-  .svc-panel{position:relative;top:0;order:-1}
-  .svc-frame-wrap::before{display:none}
-  .f-grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width:640px){
-  body{font-size:16px}
-  .brand img{height:58px}
-  .nav-cta .btn{display:none}
-  .hero{padding:3rem 0 4rem}
-  .hero h1 .hl{white-space:normal}
-  .ticket{position:relative;left:auto;bottom:auto;margin:-60px auto 0;transform:rotate(-3deg)}
-  .badge-float{display:none}
-  .stain-body,.form,.contact-info{padding:2.6rem 1.6rem}
-  .stain-img{min-height:260px}
-  .door-content{padding:2rem 1.5rem}
-  .door-banner{min-height:auto;padding-top:220px}
-  .checks{grid-template-columns:1fr}
-  .fgrid{grid-template-columns:1fr}
-  .f-grid{grid-template-columns:1fr}
-  .svc-list .d{padding-left:0}
-  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;box-shadow:0 -6px 20px rgba(0,0,0,.15)}
-  .mbar a{padding:1rem;text-align:center;font-weight:700}
-  .mbar a:first-child{background:var(--navy);color:#fff}
-  .mbar a:last-child{background:var(--yellow);color:var(--ink)}
-  footer{padding-bottom:60px}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
-</style>
+<meta name="description" content="The Right Guy Carpet Cleaning Inc cleans carpets, area rugs, furniture, leather, tile and grout for homes and businesses. Free written estimates. Call (630) 264-4369.">
+<meta name="theme-color" content="#052C51">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/baloo-2-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fredoka-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:title" content="The Right Guy Carpet Cleaning Inc">
+<meta property="og:description" content="Cleaning sale going on now! $25 off cleaning services of $250 or more.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HouseCleaningService","name":"The Right Guy Carpet Cleaning Inc","url":"https://therightguycarpetcleaning.com/","telephone":"+1-630-264-4369","email":"TheRightGuyCarpetCleaning@gmail.com","description":"Residential and commercial carpet cleaning, stain removal, area rug, furniture, leather, tile and grout cleaning."}</script>
 </head>
 <body>
 
-<div class="ribbon" aria-label="Current promotion">
-  <div class="ribbon-track">
-    <span><i></i><b>Cleaning Sale Going On Now!</b> $25 OFF cleaning services of $250 or more</span>
-    <span><i></i>Free written estimates</span>
-    <span><i></i>Senior citizen discounts available</span>
-    <span><i></i>Call (630) 264-4369</span>
-    <span><i></i><b>Cleaning Sale Going On Now!</b> $25 OFF cleaning services of $250 or more</span>
-    <span><i></i>Free written estimates</span>
-    <span><i></i>Senior citizen discounts available</span>
-    <span><i></i>Call (630) 264-4369</span>
-  </div>
-</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-carpet" viewBox="0 0 32 32"><rect x="5" y="9" width="22" height="14" rx="2"/><path d="M5 14h22M5 18h22M9 5v4M15 5v4M21 5v4M9 23v4M15 23v4M21 23v4"/></symbol>
+    <symbol id="i-sofa" viewBox="0 0 32 32"><path d="M6 14v-3a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v3"/><rect x="3" y="14" width="26" height="8" rx="3"/><path d="M7 22v3M25 22v3"/></symbol>
+    <symbol id="i-rug" viewBox="0 0 32 32"><rect x="4" y="8" width="24" height="16" rx="2"/><path d="M16 11l5 5-5 5-5-5zM4 12H1M4 16H1M4 20H1M28 12h3M28 16h3M28 20h3"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 32 32"><path d="M16 4s8 9 8 15a8 8 0 0 1-16 0c0-6 8-15 8-15z"/><path d="M12 19a4 4 0 0 0 4 4"/></symbol>
+    <symbol id="i-paw" viewBox="0 0 32 32"><ellipse cx="9" cy="13" rx="2.6" ry="3.4"/><ellipse cx="23" cy="13" rx="2.6" ry="3.4"/><ellipse cx="14" cy="8" rx="2.6" ry="3.4"/><ellipse cx="18" cy="8" rx="2.6" ry="3.4"/><path d="M16 15c-4 0-7 4-7 7 0 2 2 3 4 2 2-1 8-1 10 0 2 1 4 0 4-2 0-3-3-7-7-7z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 32 32"><path d="M4 15L16 5l12 10M7 13v14h18V13"/><path d="M13 27v-8h6v8"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 32 32"><path d="M6 26C6 12 14 5 27 5c0 13-7 21-19 21z"/><path d="M6 26C12 18 17 14 22 11"/></symbol>
+        <symbol id="i-truck" viewBox="0 0 32 32"><path d="M3 21V9h15v12M18 13h6l5 5v3h-4"/><circle cx="9" cy="23" r="3"/><circle cx="23" cy="23" r="3"/><path d="M12 21h8"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 32 32"><path d="M4 16.5V5h11.5L28 17.5 17.5 28z"/><circle cx="10.5" cy="10.5" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 32 32"><path d="M16 4l11 4v8c0 6.5-4.5 10.5-11 12C9.500 26.500 5 22.500 5 16V8z"/><path d="M11 16l4 4 7-8"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 32 32"><path d="M18 3L6 18h9l-2 11 13-16h-9z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 32 32"><path d="M16 4l3.700 7.800 8.300 1-6.200 5.800 1.700 8.400L16 22.700 8.500 27l1.700-8.400L4 12.800l8.300-1z"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 32 32"><rect x="4" y="12" width="24" height="16" rx="2"/><path d="M2 12h28v-4H2zM16 8v20M16 8c-2-5-8-5-8-1.500S14 8 16 8zM16 8c2-5 8-5 8-1.500S18 8 16 8z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M10 16.500l4 4 8-9"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 32 32"><path d="M16 3l2.800 9.200L28 16l-9.200 2.800L16 29l-2.800-10.200L4 16l9.200-2.800z"/></symbol>
+    <symbol id="i-maple" viewBox="0 0 32 32"><path d="M16 3l3 6 4-2-1 7 5-2-2 5 3 2-8 3v5h-2v-5l-8-3 3-2-2-5 5 2-1-7 4 2z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 32 32"><rect x="4" y="6" width="24" height="21" rx="3"/><path d="M4 12h24M10 3v6M22 3v6"/></symbol>
+    <symbol id="i-bld" viewBox="0 0 32 32"><rect x="7" y="4" width="14" height="24" rx="1"/><path d="M21 12h4v16M11 9h2M15 9h2M11 14h2M15 14h2M11 19h2M15 19h2M12 28v-4h4v4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  </defs>
+</svg>
 
-<header>
-  <div class="wrap nav">
-    <a href="#" class="brand" aria-label="The Right Guy Carpet Cleaning home"><img src="images/logo-sm.png" alt="The Right Guy Carpet Cleaning logo"></a>
-    <ul class="menu" id="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#contact">Online Booking</a></li>
-      <li><a href="#services">Services</a>
-        <ul class="sub">
-          <li><a href="#services">Residential Carpet Cleaning</a></li>
-          <li><a href="#stains">Stain Removers</a></li>
-          <li><a href="#services">Tile and Grout Cleaning</a></li>
-          <li><a href="#services">Leather Cleaning</a></li>
-        </ul>
-      </li>
-      <li><a href="#services">Commercial</a></li>
-      <li><a href="#deals">Videos</a>
-        <ul class="sub"><li><a href="#deals">Picture Gallery</a></li></ul>
-      </li>
-      <li><a href="#deals">Coupons</a>
-        <ul class="sub"><li><a href="#deals">Senior Citizen Discounts</a></li></ul>
-      </li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">FAQ's</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-    <div class="nav-cta">
-      <a href="tel:6302644369" class="phone-pill"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Call us</small>(630) 264-4369</span></a>
-      <a href="#contact" class="btn btn-yellow">Online Booking</a>
-      <button class="burger" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
-    </div>
+<header class="top" id="top">
+  <div class="wrap in">
+    <a class="brand" href="./" aria-label="The Right Guy Carpet Cleaning home"><img src="assets/img/logo.png" alt="The Right Guy Carpet Cleaning" width="800" height="491"></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about"><svg class="ni" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-pin"/></svg><span>About</span></a>
+      <div class="has-dd"><a class="dd-link" href="#services"><svg class="ni" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-drop"/></svg><span>Services</span></a><button class="dd-btn" type="button" aria-expanded="false" aria-label="Show Services menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd"><a href="#services">Residential Carpet Cleaning</a><a href="#services">Stain Removers</a><a href="#services">Tile and Grout Cleaning</a><a href="#services">Leather Cleaning</a><a href="#services">Commercial</a></div></div>
+      <a href="#how"><svg class="ni" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-check"/></svg><span>How it works</span></a>
+      <div class="has-dd"><a class="dd-link" href="#coupons"><svg class="ni" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-tag"/></svg><span>Coupons</span></a><button class="dd-btn" type="button" aria-expanded="false" aria-label="Show Coupons menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="dd"><a href="#coupons">Cleaning Sale</a><a href="#coupons">Senior Citizen Discounts</a></div></div>
+      <a href="#reviews"><svg class="ni" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-chat"/></svg><span>Testimonials</span></a>
+      <a href="#faq"><svg class="ni" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-spark"/></svg><span>FAQ's</span></a>
+      <a href="#contact"><svg class="ni" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-mail"/></svg><span>Contact</span></a>
+      <a class="btn btn-primary nav-book" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-light nav-call" href="tel:+16302644369"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-phone"/></svg> Call us</a>
+    </nav>
+    <a class="call" href="tel:+16302644369"><i><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></i><span><small>FREE ESTIMATES</small>(630) 264-4369</span></a>
   </div>
 </header>
 
 <main>
 <!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="rv">
-      <span class="eyebrow">The Right Guy Carpet Cleaning Inc</span>
-      <h1>Cleaning Sale <span class="hl">Going On Now!<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M3 14 C 80 4, 200 2, 297 10" stroke="#FDC806" stroke-width="7" fill="none" stroke-linecap="round"/></svg></span> <em>We clean all year long.</em></h1>
-      <p class="lead">Carpets, rugs, furniture, tile and more. We can clean your home and business with the many services we offer, and every job starts with a free written estimate.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-yellow">Online Booking <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="tel:6302644369" class="btn btn-ghost">Call (630) 264-4369</a>
+<section class="hero" id="home">
+  <img class="hero-img" src="assets/img/hero.jpg" alt="Bright living room with clean carpet and a white area rug" width="1400" height="930" fetchpriority="high">
+  <div class="fx" data-bubbles="8" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-tx">
+      <span class="kicker">Cleaning sale going on now!</span>
+      <h1 class="pop white"><span>Carpet &amp;</span><span>Upholstery</span><span>Cleaning</span></h1>
+      <p class="slogan">We clean all year long!</p>
+      <ul class="checks">
+        <li>Residential carpet</li>
+        <li>Stain removal</li>
+        <li>Area rugs</li>
+        <li>Tile and grout</li>
+        <li>Furniture &amp; leather</li>
+        <li>Homes &amp; businesses</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-gold btn-lg" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-light btn-lg" href="tel:+16302644369"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-phone"/></svg> (630) 264-4369</a>
       </div>
-      <div class="hero-meta">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Homes &amp; businesses</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Pay only for what we clean</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>No pressured sales</span>
-      </div>
+      <a class="rating" href="#coupons" aria-label="25 dollars off cleaning services of 250 dollars or more"><span class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span><b>$25 OFF</b> cleaning services of $250 or more</span></a>
     </div>
-    <div class="hero-visual rv">
-      <div class="hero-ring"></div>
-      <div class="hero-photo"><img src="images/hero.jpg" alt="The Right Guy carpet cleaning wand and hoses on a freshly cleaned carpet"></div>
-      <div class="badge-float"><span class="dot"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 10h8M8 14h5"/></svg></span>Free written<br>estimates</div>
-      <div class="ticket">
-        <div class="big">$25 <small>OFF</small></div>
-        <p>Cleaning services of $250 or more</p>
-        <span>Not valid on new flooring sales or air duct/vent cleaning services.</span>
-      </div>
+    <div class="badges">
+      <div class="badge"><svg viewBox="0 0 32 32" fill="none" stroke="#0395AB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-gift"/></svg>Free written estimates</div>
+      <div class="badge"><svg viewBox="0 0 32 32" fill="#0395AB" stroke="#0395AB" stroke-width="1"><use href="#i-paw"/></svg>Pet stain removal</div>
+      <div class="badge"><svg viewBox="0 0 32 32" fill="none" stroke="#0395AB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-home"/></svg>Residential &amp; commercial</div>
     </div>
   </div>
 </section>
 
-<!-- THE FOUR RIGHTS -->
-<section class="rights">
-  <div class="wrap">
-    <div class="rights-head rv">
-      <div>
-        <span class="eyebrow">Why The Right Guy</span>
-        <h2 style="margin-top:.8rem">Four reasons we're the <span>right call.</span></h2>
-      </div>
-      <p>Meeting all your cleaning needs for carpet, furniture, pet stain removal and more, backed by many years of cleaning and customer service experience.</p>
+<!-- ABOUT US -->
+<section class="sec about" id="about">
+  <div class="fx" data-bubbles="6" aria-hidden="true" style="opacity:.5"></div>
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="frame tilt"><img src="assets/img/about.jpg" alt="Carpeted stairs halfway through cleaning, with the cleaned steps bright and the hose running along the bottom" width="1400" height="933" loading="lazy"><span class="crew"><svg viewBox="0 0 32 32"><use href="#i-spark"/></svg>Real results from a real job</span></div>
     </div>
-    <ul class="rights-list">
-      <li class="rv"><span class="num">01</span><h3>The <b>right</b> experience</h3><p>Many years of cleaning and customer service experience behind every carpet, rug and couch we clean.</p></li>
-      <li class="rv"><span class="num">02</span><h3>The <b>right</b> equipment</h3><p>We bring powerful cleaning equipment right to your door, ready for homes and businesses alike.</p></li>
-      <li class="rv"><span class="num">03</span><h3>The <b>right</b> price</h3><p>We measure and charge for only what we clean, and you get the price before we start. No pressured sales.</p></li>
-      <li class="rv"><span class="num">04</span><h3>The <b>right</b> attitude</h3><p>We pre-treat stains, move furniture when needed and take care around breakables, walls and fresh paint.</p></li>
-    </ul>
+    <div class="rv">
+      <p class="eyebrow">About us</p>
+      <h2 class="h2" style="margin:8px 0 14px">Meet The Right Guy</h2>
+      <p class="lead">The Right Guy Carpet Cleaning Inc meets all your cleaning needs for carpet, furniture, pet stain removal and more, plus carpet and vinyl plank sales. We bring many years of cleaning and customer service experience to every job.</p>
+      <p class="lead" style="margin-top:12px">We bring powerful equipment right to your door, measure and charge for only what we clean, and give you the price before we start. No pressured sales.</p>
+      <div class="astats">
+        <div><i><svg viewBox="0 0 32 32"><use href="#i-truck"/></svg></i><b>We come to you</b><span>equipment at your door</span></div>
+        <div><i><svg viewBox="0 0 32 32"><use href="#i-home"/></svg></i><b>Homes + business</b><span>residential and commercial</span></div>
+        <div><i><svg viewBox="0 0 32 32"><use href="#i-gift"/></svg></i><b>Free estimates</b><span>written, up front</span></div>
+      </div>
+      <div class="cta" style="margin-top:26px"><a class="btn btn-gold" href="#contact">Book your cleaning <svg><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec why" id="why">
+  <div class="fx" data-bubbles="8" aria-hidden="true" style="opacity:.55"></div>
+  <div class="wrap" style="position:relative">
+    <div class="center">
+      <p class="eyebrow">Why us</p>
+      <h2 class="h2" style="margin:8px 0 12px">Why choose The Right Guy?</h2>
+      <p class="lead">The right experience, the right equipment, the right price &amp; the right attitude.</p>
+    </div>
+    <div class="wgrid">
+      <article class="wcard c-blue rv"><span class="wn" aria-hidden="true">01</span><span class="wi"><svg viewBox="0 0 32 32"><use href="#i-star"/></svg></span><h3>The right experience</h3><p>Many years of cleaning and customer service experience behind every job.</p></article>
+      <article class="wcard c-gold rv"><span class="wn" aria-hidden="true">02</span><span class="wi"><svg viewBox="0 0 32 32"><use href="#i-bolt"/></svg></span><h3>The right equipment</h3><p>Powerful cleaning equipment, brought right to your door.</p></article>
+      <article class="wcard c-green rv"><span class="wn" aria-hidden="true">03</span><span class="wi"><svg viewBox="0 0 32 32"><use href="#i-tag"/></svg></span><h3>The right price</h3><p>We measure and charge for only what we clean, and you get the price before we start.</p></article>
+      <article class="wcard c-pink rv"><span class="wn" aria-hidden="true">04</span><span class="wi"><svg viewBox="0 0 32 32"><use href="#i-check"/></svg></span><h3>The right attitude</h3><p>No pressured sales. Just honest, friendly service from start to finish.</p></article>
+      <article class="wcard c-teal rv"><span class="wn" aria-hidden="true">05</span><span class="wi"><svg viewBox="0 0 32 32"><use href="#i-drop"/></svg></span><h3>Stains pre-treated</h3><p>Every stain gets pre-treated before we clean, including pet stains.</p></article>
+      <article class="wcard c-purple rv"><span class="wn" aria-hidden="true">06</span><span class="wi"><svg viewBox="0 0 32 32"><use href="#i-shield"/></svg></span><h3>Care for your home</h3><p>We move furniture when needed and take care around breakables, walls and fresh paint.</p></article>
+    </div>
+    <div class="wstrip rv" role="list">
+      <div role="listitem"><svg viewBox="0 0 32 32"><use href="#i-tag"/></svg><span><b>$25 OFF</b> services of $250 or more</span></div>
+      <div role="listitem"><svg viewBox="0 0 32 32"><use href="#i-gift"/></svg><span><b>Free</b> written estimates</span></div>
+      <div role="listitem"><svg viewBox="0 0 32 32"><use href="#i-truck"/></svg><span><b>We come to you</b> with our equipment</span></div>
+      <div role="listitem"><svg viewBox="0 0 32 32"><use href="#i-star"/></svg><span><b>Senior</b> citizen discounts</span></div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services" id="services">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">Our services</span><h2>One call covers carpets, rugs, furniture and floors.</h2></div>
-      <p>Tap a service to see more. Not sure what you need? Ask for a free written estimate.</p>
+<section class="band" id="services">
+  <div class="fx" data-bubbles="8" aria-hidden="true" style="opacity:.55"></div>
+  <div class="wrap" style="position:relative;padding-bottom:90px">
+    <div class="center">
+      <h2 class="h2">Our services</h2>
+      <p class="lead" style="margin-top:10px">We clean your home and business with the many services we offer.</p>
     </div>
-    <div class="svc-grid">
-      <ul class="svc-list rv" id="svcList">
-        <li class="active" data-img="0"><button><span class="n">01</span><span class="t">Residential Carpet Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Deep carpet cleaning for every room in your home, with stains pre-treated and furniture moved when needed.</p></div></li>
-        <li data-img="4"><button><span class="n">02</span><span class="t">Commercial Carpet Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Carpet cleaning for businesses, offices and commercial spaces.</p></div></li>
-        <li data-img="1"><button><span class="n">03</span><span class="t">Area Rug Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Wool, wool orientals, nylon and polyester area rugs.</p></div></li>
-        <li data-img="3"><button><span class="n">04</span><span class="t">Furniture &amp; Leather Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Furniture cleaning plus dedicated leather cleaning for sofas, chairs and more.</p></div></li>
-        <li data-img="2"><button><span class="n">05</span><span class="t">Tile and Grout Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Tile and grout cleaning to lift built-up dirt from floors.</p></div></li>
-        <li data-img="6"><button><span class="n">06</span><span class="t">Stairway Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Carpeted stairways cleaned step by step.</p></div></li>
-        <li data-img="5"><button><span class="n">07</span><span class="t">Wood Floor Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Cleaning for wood floors throughout your home or business.</p></div></li>
-        <li data-img="4"><button><span class="n">08</span><span class="t">Vent Cleaning</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Vent cleaning services. Note: the current cleaning sale does not apply to air duct/vent cleaning.</p></div></li>
-        <li data-img="5"><button><span class="n">09</span><span class="t">Carpet &amp; Vinyl Plank Sales</span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="d"><p>Need new flooring instead? We also sell carpet and vinyl plank.</p></div></li>
-      </ul>
-      <div class="svc-panel rv">
-        <div class="svc-frame-wrap"><div class="svc-frame" id="svcFrame">
-          <img class="show" src="images/svc-carpet.jpg" alt="Residential carpet cleaning">
-          <img src="images/svc-rugs.jpg" alt="Area rug cleaning">
-          <img src="images/svc-tile.jpg" alt="Tile and grout cleaning">
-          <img src="images/svc-upholstery.jpg" alt="Leather and furniture cleaning">
-          <img src="images/svc-commercial.jpg" alt="Carpet before and after cleaning">
-          <img src="images/svc-floors.jpg" alt="Wood floor and vinyl plank flooring">
-          <img src="images/svc-stairs.jpg" alt="Stairway carpet cleaning, before and after">
-        </div></div>
-        <div class="svc-note">
-          <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 6h18M3 12h18M3 18h12"/></svg></span>
-          <div><b>We measure. You pay for what we clean.</b><span>You'll know the price before we start.</span></div>
-        </div>
-      </div>
+    <div class="cards">
+      <article class="card c-blue rv">
+        <div class="ph"><img src="assets/img/carpet.jpg" alt="Carpet cleaning wand and hoses on a freshly cleaned bedroom carpet" width="900" height="600" loading="lazy"><span class="ico"><svg viewBox="0 0 32 32"><use href="#i-carpet"/></svg></span></div>
+        <div class="tx"><h3>Residential carpet cleaning</h3><p>Deep carpet cleaning for every room in your home.</p><ul class="feat"><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Stains pre-treated</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Furniture moved when needed</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Stairway cleaning</li></ul><a class="btn btn-primary" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card c-gold rv">
+        <div class="ph"><img src="assets/img/stairs.jpg" alt="Carpeted stairs showing dirty steps beside freshly cleaned steps" width="1000" height="667" loading="lazy"><span class="ico"><svg viewBox="0 0 32 32"><use href="#i-drop"/></svg></span></div>
+        <div class="tx"><h3>Stain removal</h3><p>Pet stains and sanitizing stains lifted from your carpet.</p><ul class="feat"><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Pet stains and urine</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Coffee, wine and blood</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Vomit and sanitizing stains</li></ul><a class="btn btn-primary" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card c-green rv">
+        <div class="ph"><img src="assets/img/rugs.jpg" alt="Clean white shag area rug in a bright living room" width="1000" height="667" loading="lazy"><span class="ico"><svg viewBox="0 0 32 32"><use href="#i-rug"/></svg></span></div>
+        <div class="tx"><h3>Area rug cleaning</h3><p>Careful cleaning for the rugs you love.</p><ul class="feat"><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Wool and wool orientals</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Nylon rugs</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Polyester rugs</li></ul><a class="btn btn-primary" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card c-blue rv">
+        <div class="ph"><img src="assets/img/leather.jpg" alt="Cream leather sofa after cleaning" width="1000" height="667" loading="lazy"><span class="ico"><svg viewBox="0 0 32 32"><use href="#i-sofa"/></svg></span></div>
+        <div class="tx"><h3>Furniture &amp; leather cleaning</h3><p>Bring your sofas and chairs back to life.</p><ul class="feat"><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Furniture cleaning</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Leather cleaning</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Stain removal</li></ul><a class="btn btn-primary" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card c-gold rv">
+        <div class="ph"><img src="assets/img/tile.jpg" alt="Clean slate-look tile floor with bright grout lines" width="1000" height="667" loading="lazy"><span class="ico"><svg viewBox="0 0 32 32"><use href="#i-spark"/></svg></span></div>
+        <div class="tx"><h3>Tile and grout cleaning</h3><p>Lift the built-up dirt from tile floors and grout lines.</p><ul class="feat"><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Tile and grout</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Wood floor cleaning</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Homes and businesses</li></ul><a class="btn btn-primary" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
+      <article class="card c-green rv">
+        <div class="ph"><img src="assets/img/commercial.jpg" alt="Carpet showing a cleaned section next to an uncleaned section" width="900" height="600" loading="lazy"><span class="ico"><svg viewBox="0 0 32 32"><use href="#i-bld"/></svg></span></div>
+        <div class="tx"><h3>Commercial carpet cleaning</h3><p>Carpet cleaning for your business, with a free written estimate.</p><ul class="feat"><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Equipment brought to you</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Charged only for what we clean</li><li><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Price before we start</li></ul><a class="btn btn-primary" href="#contact">Get a free estimate <svg><use href="#i-arrow"/></svg></a></div>
+      </article>
     </div>
-  </div>
-</section>
-
-<!-- STAINS -->
-<section class="stains" id="stains">
-  <div class="wrap">
-    <div class="stain-card rv">
-      <div class="stain-img"><img src="images/stains.jpg" alt="Carpet before and after cleaning"></div>
-      <div class="stain-body">
-        <span class="eyebrow">Stain removers</span>
-        <h2>Spilled it? We've seen it. We'll treat it.</h2>
-        <p>Stain removal is a big part of what we do, including pet stains and sanitizing stains. Every stain gets pre-treated before we clean.</p>
-        <div class="drops">
-          <span class="drop"><i style="background:#6B4226"></i>Coffee</span>
-          <span class="drop"><i style="background:#7B1E3A"></i>Wine</span>
-          <span class="drop"><i style="background:#B3261E"></i>Blood</span>
-          <span class="drop"><i style="background:#E0B422"></i>Urine</span>
-          <span class="drop"><i style="background:#9BAA4A"></i>Vomit</span>
-          <span class="drop"><i style="background:var(--teal-deep)"></i>Pet stains</span>
-        </div>
-      </div>
+    <div class="chips">
+      <span class="chip"><svg viewBox="0 0 32 32"><use href="#i-home"/></svg>Stairway cleaning</span>
+      <span class="chip"><svg viewBox="0 0 32 32"><use href="#i-spark"/></svg>Wood floor cleaning</span>
+      <span class="chip"><svg viewBox="0 0 32 32"><use href="#i-bolt"/></svg>Vent cleaning</span>
+      <span class="chip"><svg viewBox="0 0 32 32"><use href="#i-carpet"/></svg>Carpet &amp; vinyl plank sales</span>
     </div>
   </div>
 </section>
 
-<!-- AT YOUR DOOR -->
-<section class="door">
-  <div class="wrap">
-    <div class="door-banner rv">
-      <img src="images/at-your-door.jpg" alt="Stairway carpet being cleaned with professional equipment">
-      <div class="door-content">
-        <div>
-          <span class="eyebrow">What to expect</span>
-          <h2 style="margin-top:.8rem">Powerful equipment, <span>brought to your door.</span></h2>
-        </div>
-        <ul class="checks">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Free written estimates</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Price given before we start</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>We measure and charge for only what we clean</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Stains pre-treated</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Furniture moved when needed</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Care around breakables, walls and fresh paint</li>
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="fx" data-bubbles="8" aria-hidden="true" style="opacity:.35"></div>
+  <div class="wrap" style="position:relative">
+    <div class="center hw">
+      <img class="gen" src="assets/img/mascot.png" alt="" width="475" height="760" loading="lazy" aria-hidden="true">
+      <p class="eyebrow">Easy as 1, 2, 3</p>
+      <h2>How it works</h2>
+      <p class="sub">Honest pricing and no pressured sales, from start to finish.</p>
+    </div>
+    <div class="steps">
+        <div class="step rv"><span class="num">1</span><span class="n"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></span><b>Book or call</b><span class="d">Book online or call (630) 264-4369 for your free written estimate.</span><em><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Free written estimates</em></div>
+        <div class="step rv"><span class="num">2</span><span class="n"><svg viewBox="0 0 32 32"><use href="#i-tag"/></svg></span><b>We measure</b><span class="d">We measure what needs cleaning and give you the price before we start.</span><em><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Pay only for what we clean</em></div>
+        <div class="step rv"><span class="num">3</span><span class="n"><svg viewBox="0 0 32 32"><use href="#i-spark"/></svg></span><b>We clean</b><span class="d">We pre-treat stains, move furniture when needed and leave your home fresh.</span><em><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>Care around breakables and walls</em></div>
+    </div>
+    <div class="center" style="margin-top:34px"><a class="btn btn-gold btn-lg" href="#contact">Start your booking <svg><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- COUPONS -->
+<section class="sec prices" id="coupons">
+  <div class="fx" data-bubbles="8" aria-hidden="true" style="opacity:.5"></div>
+  <div class="wrap" style="position:relative">
+    <div class="center">
+      <p class="eyebrow">Coupons</p>
+      <h2 class="h2" style="margin-top:8px">Cleaning sale going on now!</h2>
+      <p class="lead" style="margin-top:12px">Save on your next cleaning, all year long.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pcard p-carpet rv">
+        <div class="ph2"><span class="pi"><svg viewBox="0 0 32 32"><use href="#i-tag"/></svg></span><div><h3>Cleaning sale</h3><p>Homes and businesses</p></div></div>
+        <ul>
+          <li><i><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-check"/></svg></i><span>Cleaning services<small>of $250 or more</small></span><b><em>Save</em>$25 OFF</b></li>
         </ul>
+        <a class="pbtn" href="#contact">Claim the sale <svg><use href="#i-arrow"/></svg></a>
       </div>
+      <div class="pcard p-up rv">
+        <div class="ph2"><span class="pi"><svg viewBox="0 0 32 32"><use href="#i-star"/></svg></span><div><h3>Seniors</h3><p>Senior citizen discounts</p></div></div>
+        <ul>
+          <li><i><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-check"/></svg></i><span>Senior citizen discount<small>ask when you book</small></span><b><em>Ask us</em>Save</b></li>
+        </ul>
+        <a class="pbtn" href="tel:+16302644369">Call to ask <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="pcard p-rug rv">
+        <div class="ph2"><span class="pi"><svg viewBox="0 0 32 32"><use href="#i-gift"/></svg></span><div><h3>Estimates</h3><p>Know your price first</p></div></div>
+        <ul>
+          <li><i><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-check"/></svg></i><span>Written estimate<small>no pressured sales</small></span><b><em>Always</em>Free</b></li>
+        </ul>
+        <a class="pbtn" href="#contact">Get my estimate <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="pnote rv">
+      <span><svg viewBox="0 0 32 32"><use href="#i-tag"/></svg>Sale not valid on new flooring sales or air duct/vent cleaning services</span>
+      <span><svg viewBox="0 0 32 32"><use href="#i-check"/></svg>We measure and charge for only what we clean</span>
+    </div>
+    <div class="center" style="margin-top:26px"><a class="btn btn-primary btn-lg" href="#contact">Book now <svg><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec reviews" id="reviews">
+  <div class="fx" data-bubbles="6" aria-hidden="true" style="opacity:.6"></div>
+  <div class="wrap" style="position:relative">
+    <div class="center">
+      <p class="eyebrow">Testimonials</p>
+      <h2 class="h2" style="margin:8px 0 12px">Our customers say</h2>
+      <p class="lead">Carpets and furniture that look brand new.</p>
+    </div>
+  </div>
+  <div class="marq" aria-label="Customer testimonials">
+    <div class="mrow l"><div class="mtrack"><div class="mset"><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;The carpets look brand new!&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">J</span><span><b>Jean P., North Aurora</b><small>Whole house carpet cleaning</small></span></figcaption></figure><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;Rob removed tough stains and delivered on his promises.&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">J</span><span><b>Jeel P., Itasca</b><small>Stain removal</small></span></figcaption></figure><figure class="tcard mq cta-card"><img src="assets/img/mascot.png" alt="" width="475" height="760" loading="lazy" aria-hidden="true"><div><b>Happy with your clean?</b><p>Your words help other families find us.</p><a class="btn btn-primary" href="mailto:TheRightGuyCarpetCleaning@gmail.com?subject=My%20review">Send us your review <svg fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mail"/></svg></a></div></figure></div><div class="mset" aria-hidden="true"><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;The carpets look brand new!&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">J</span><span><b>Jean P., North Aurora</b><small>Whole house carpet cleaning</small></span></figcaption></figure><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;Rob removed tough stains and delivered on his promises.&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">J</span><span><b>Jeel P., Itasca</b><small>Stain removal</small></span></figcaption></figure><figure class="tcard mq cta-card"><img src="assets/img/mascot.png" alt="" width="475" height="760" loading="lazy" aria-hidden="true"><div><b>Happy with your clean?</b><p>Your words help other families find us.</p><a class="btn btn-primary" href="mailto:TheRightGuyCarpetCleaning@gmail.com?subject=My%20review">Send us your review <svg fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mail"/></svg></a></div></figure></div></div></div>
+    <div class="mrow r"><div class="mtrack"><div class="mset"><figure class="tcard mq fresh"><span class="fi"><svg viewBox="0 0 32 32"><use href="#i-spark"/></svg></span><blockquote>The right experience, the right equipment, the right price &amp; the right attitude.</blockquote><figcaption><span><b>The Right Guy</b><small>Carpet Cleaning Inc</small></span></figcaption></figure><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;I wasn't sure my sofa was worth cleaning. Now it looks almost brand new.&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">L</span><span><b>Lolita G., Aurora</b><small>Sofa cleaning</small></span></figcaption></figure><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;The carpets look brand new!&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">J</span><span><b>Jean P., North Aurora</b><small>Whole house carpet cleaning</small></span></figcaption></figure></div><div class="mset" aria-hidden="true"><figure class="tcard mq fresh"><span class="fi"><svg viewBox="0 0 32 32"><use href="#i-spark"/></svg></span><blockquote>The right experience, the right equipment, the right price &amp; the right attitude.</blockquote><figcaption><span><b>The Right Guy</b><small>Carpet Cleaning Inc</small></span></figcaption></figure><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;I wasn't sure my sofa was worth cleaning. Now it looks almost brand new.&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">L</span><span><b>Lolita G., Aurora</b><small>Sofa cleaning</small></span></figcaption></figure><figure class="tcard mq"><div class="stars" role="img" aria-label="5 out of 5 stars"><i></i><i></i><i></i><i></i><i></i></div><blockquote>&ldquo;The carpets look brand new!&rdquo;</blockquote><figcaption><span class="av" aria-hidden="true">J</span><span><b>Jean P., North Aurora</b><small>Whole house carpet cleaning</small></span></figcaption></figure></div></div></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq" id="faq">
+  <div class="fx" data-bubbles="6" aria-hidden="true" style="opacity:.5"></div>
+  <div class="wrap faqgrid" style="position:relative">
+    <aside class="faqside rv">
+      <p class="eyebrow">Good to know</p>
+      <h2 class="h2" style="margin:8px 0 12px">FAQ's</h2>
+      <p class="lead">Everything you need to know before we clean. Can't find it? Ask us directly.</p>
+      <div class="askcard">
+        <img src="assets/img/mascot.png" alt="" width="475" height="760" loading="lazy" aria-hidden="true">
+        <div><b>Still have a question?</b><p>Give us a call and we'll help.</p>
+        <a class="btn btn-primary" href="tel:+16302644369"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-phone"/></svg> (630) 264-4369</a></div>
+      </div>
+    </aside>
+    <div class="list">
+        <details open><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-cal"/></svg></span><span>How often should you professionally clean carpeting?</span></summary><p>Most carpet manufacturers suggest a professional cleaning every 12 to 18 months. Every home is different, but we recommend at least once a year.</p></details>
+        <details><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-tag"/></svg></span><span>How much does it cost to clean a room?</span></summary><p>Carpet is priced by square footage, with a minimum charge. Upholstery and leather are priced per piece and stairs per stair. Weekends, after hours and extra services cost more. Call for your free written estimate.</p></details>
+        <details><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-home"/></svg></span><span>Do I need to move anything before you arrive?</span></summary><p>Furniture moving is an optional extra service. Please take any breakables off the top of, or out of, the furniture you want moved.</p></details>
+        <details><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-carpet"/></svg></span><span>Do I need to vacuum before you clean?</span></summary><p>A pre-vacuum is highly recommended. We also offer a pre-vac service, which may add to the cost.</p></details>
+        <details><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-pin"/></svg></span><span>Do I need to be home while you clean?</span></summary><p>No. Just give us entry details, a clear description of the work and a cell number if you'd like the price first. Payment is due at the time of service unless arranged ahead, and pets need to be secured.</p></details>
+        <details><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-paw"/></svg></span><span>When can we walk on the carpet after it has been cleaned?</span></summary><p>Right away. Socks or clean shoes are best, and take care stepping from damp carpet onto tile or wood. Wiping your dog's paws helps prevent soil spots while it dries.</p></details>
+        <details><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-sofa"/></svg></span><span>How soon can we put furniture back onto the clean carpet?</span></summary><p>You can put furniture back while the carpet is damp if you protect the legs with foil, plastic wrap or wax paper, or ask us for pads or blocks. Usually it can go back the next day without protectors.</p></details>
+        <details><summary><span class="qi"><svg viewBox="0 0 32 32"><use href="#i-drop"/></svg></span><span>What can we use ourselves to spot clean?</span></summary><p>Go easy on soap-based products, which can set stains or leave a residue that attracts dirt. Club soda works well on spills, and vinegar and water helps with some spots like wine or coffee.</p></details>
     </div>
   </div>
 </section>
 
-<!-- DEALS -->
-<section class="deals" id="deals">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div><span class="eyebrow">Coupons &amp; more</span><h2>Save on your next clean.</h2></div>
+<!-- QUOTE FORM -->
+<section class="sec quote" id="contact">
+  <div class="fx" data-bubbles="9" aria-hidden="true" style="opacity:.7"></div>
+  <div class="wrap grid">
+    <div>
+      <h2>Ready for the right guy?</h2>
+      <p class="lead">Get your free written estimate today. No pressured sales, and you'll know the price before we start.</p>
+      <div class="cta" style="margin-top:24px">
+        <a class="btn btn-gold btn-lg" href="tel:+16302644369"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-phone"/></svg> (630) 264-4369</a>
+        <a class="btn btn-light btn-lg" href="mailto:TheRightGuyCarpetCleaning@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><use href="#i-mail"/></svg> Email us</a>
+      </div>
+      <img class="gen" src="assets/img/mascot.png" alt="" width="475" height="760" loading="lazy" aria-hidden="true">
     </div>
-    <div class="deals-grid">
-      <div class="deal deal-sale rv">
-        <span class="eyebrow" style="color:var(--ink)">Cleaning sale</span>
-        <div class="amt"><sup>$</sup>25 OFF</div>
-        <p><b>Cleaning services of $250 or more.</b><br><small>Not valid on new flooring sales or air duct/vent cleaning services.</small></p>
-        <a href="#contact" class="lnk">Claim the sale <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <form class="form" id="quick" novalidate>
+      <h3>Online booking</h3>
+      <p class="hint">Fill this out and your email app opens with the details ready to send.</p>
+      <div class="two">
+        <div class="fld"><label for="q-name">Name *</label><input id="q-name" name="name" autocomplete="name" required><span class="err">Please add your name</span></div>
+        <div class="fld"><label for="q-phone">Phone number *</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><span class="err">Please add your phone</span></div>
       </div>
-      <div class="deal deal-senior rv">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></svg></span>
-        <h3>Senior Citizen Discounts</h3>
-        <p>Ask about our senior citizen discounts when you book.</p>
-        <a href="tel:6302644369" class="lnk">Call to ask</a>
+      <div class="two">
+        <div class="fld"><label for="q-service">Service needed *</label>
+          <select id="q-service" name="service" required><option value="">Select a service</option><option>Residential carpet cleaning</option><option>Commercial carpet cleaning</option><option>Stain removal</option><option>Area rug cleaning</option><option>Furniture cleaning</option><option>Leather cleaning</option><option>Tile and grout cleaning</option><option>Stairway cleaning</option><option>Wood floor cleaning</option><option>Vent cleaning</option><option>Carpet &amp; vinyl plank sales</option></select><span class="err">Pick a service</span></div>
+        <div class="fld"><label for="q-date">Preferred date (optional)</label><input id="q-date" name="date" type="date"></div>
       </div>
-      <div class="deal deal-video rv">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-        <h3>See us in action</h3>
-        <p>Watch our YouTube videos and browse the picture gallery.</p>
-        <a href="#" class="lnk">Watch Our YouTube Videos</a>
+      <div class="fld"><label for="q-msg">Message (optional)</label><textarea id="q-msg" name="msg" placeholder="Tell us a bit about what you need cleaned"></textarea></div>
+      <div class="fld"><label for="q-photos">Photos (optional)</label>
+        <label class="drop" for="q-photos"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a3 3 0 0 1 3-3h2.5l1.8-2.5h5.4L18.5 8H21a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z" transform="translate(2 0)"/><circle cx="15" cy="16.5" r="4"/></svg><span><b>Add photos of your carpet or furniture</b><small>Tap to choose or take photos (up to 6)</small></span></label>
+        <input id="q-photos" name="photos" type="file" accept="image/*" multiple class="sr">
+        <ul class="thumbs" id="thumbs" aria-live="polite"></ul>
+        <span class="err" id="photo-err"></span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="contact-box rv">
-      <div class="contact-info">
-        <span class="eyebrow">Contact us</span>
-        <h2>Ready for the right guy?</h2>
-        <p>Book online, call or email. We'll give you a free written estimate with no pressured sales.</p>
-        <a class="c-line" href="tel:6302644369"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Phone</small><b>(630) 264-4369</b></span></a>
-        <a class="c-line" href="mailto:TheRightGuyCarpetCleaning@gmail.com"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><span><small>Email</small><b>TheRightGuyCarpetCleaning@gmail.com</b></span></a>
-      </div>
-      <form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! We will be in touch.'">
-        <h3>Online Booking</h3>
-        <p>Tell us what needs cleaning and we'll get back to you.</p>
-        <div class="fgrid">
-          <div><label for="n">Name</label><input id="n" required></div>
-          <div><label for="p">Phone</label><input id="p" type="tel" required></div>
-          <div class="full"><label for="e">Email</label><input id="e" type="email"></div>
-          <div class="full"><label for="s">Service</label>
-            <select id="s"><option>Residential Carpet Cleaning</option><option>Commercial Carpet Cleaning</option><option>Area Rug Cleaning</option><option>Furniture Cleaning</option><option>Leather Cleaning</option><option>Tile and Grout Cleaning</option><option>Stain Removal</option><option>Stairway Cleaning</option><option>Wood Floor Cleaning</option><option>Vent Cleaning</option><option>Carpet &amp; Vinyl Plank Sales</option></select></div>
-          <div class="full"><label for="m">Message</label><textarea id="m"></textarea></div>
-        </div>
-        <button class="btn btn-yellow" type="submit">Request My Free Estimate</button>
-      </form>
-    </div>
+      <button class="btn btn-primary btn-lg" type="submit" style="width:100%">Request my free estimate <svg fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mail"/></svg></button>
+      <div id="quick-out" class="fine" hidden><span data-photo-note hidden><b>Photos:</b> attach them to the email that opens. </span>If your email app did not open, <a data-sms href="#">tap here to email us</a>, <a href="#" data-copy>copy the details</a> or call <a href="tel:+16302644369">(630) 264-4369</a>.</div>
+      <p class="fine">We reply with a time to confirm. Nothing is booked until we do.</p>
+    </form>
   </div>
 </section>
 </main>
 
-<footer>
-  <div class="wrap f-grid">
-    <div>
-      <a href="#" class="f-logo"><img src="images/logo-sm.png" alt="The Right Guy Carpet Cleaning"></a>
-      <p class="f-quote">The <b>right</b> experience, the <b>right</b> equipment, the <b>right</b> price &amp; the <b>right</b> attitude.</p>
+<footer class="foot">
+  <div class="fx" data-bubbles="9" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="fcta">
+      <div><b>Ready for cleaner carpets?</b><span>Call for a free written estimate.</span></div>
+      <div class="cta">
+        <a class="btn btn-light" href="tel:+16302644369"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-phone"/></svg> (630) 264-4369</a>
+        <a class="btn btn-primary" href="#contact">Book online <svg><use href="#i-arrow"/></svg></a>
+      </div>
     </div>
-    <div>
-      <h4>Explore</h4>
-      <ul><li><a href="#">Home</a></li><li><a href="#">Experience</a></li><li><a href="#services">Carpet Cleaning Services</a></li><li><a href="#stains">Stain Removers</a></li><li><a href="#deals">Picture Gallery</a></li></ul>
+    <div class="cols">
+      <div class="fbrand">
+        <img class="fl" src="assets/img/logo.png" alt="The Right Guy Carpet Cleaning" width="800" height="491" loading="lazy">
+        <p>The right experience, the right equipment, the right price &amp; the right attitude. Carpet, rug, furniture, tile and floor cleaning for homes and businesses.</p>
+      </div>
+      <div><h4>Services</h4><a href="#services">Residential carpet cleaning</a><a href="#services">Stain removers</a><a href="#services">Tile and grout cleaning</a><a href="#services">Leather cleaning</a><a href="#services">Area rug cleaning</a><a href="#services">Commercial</a><a href="#services">Carpet &amp; vinyl plank sales</a></div>
+      <div><h4>Quick links</h4><a href="#contact">Online booking</a><a href="#about">Experience</a><a href="#coupons">Carpet cleaning coupons</a><a href="#coupons">Senior citizen discounts</a><a href="#reviews">Testimonials</a><a href="#faq">FAQ's</a><a href="#contact">Contact us</a></div>
+      <div class="fcontact"><h4>Get in touch</h4>
+        <a href="tel:+16302644369"><i><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-phone"/></svg></i><span><small>Phone</small>(630) 264-4369</span></a>
+        <a href="mailto:TheRightGuyCarpetCleaning@gmail.com"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-mail"/></svg></i><span><small>Email</small>TheRightGuyCarpetCleaning@gmail.com</span></a>
+      </div>
     </div>
-    <div>
-      <h4>More</h4>
-      <ul><li><a href="#">Testimonials</a></li><li><a href="#deals">Carpet Cleaning Coupons</a></li><li><a href="#deals">Senior Citizen Discounts</a></li><li><a href="#">Service Area</a></li><li><a href="#contact">Contact Us</a></li></ul>
-    </div>
-    <div>
-      <h4>Get in touch</h4>
-      <ul><li><a href="tel:6302644369">(630) 264-4369</a></li><li><a href="mailto:TheRightGuyCarpetCleaning@gmail.com" style="word-break:break-all">TheRightGuyCarpetCleaning@gmail.com</a></li></ul>
-      <a href="#contact" class="btn btn-yellow" style="margin-top:1.4rem">Online Booking</a>
-    </div>
+    <ul class="ftrust"><li>Free written estimates</li><li>No pressured sales</li><li>Homes &amp; businesses</li><li>Senior citizen discounts</li></ul>
+    <div class="bar"><span>&copy; 2026 The Right Guy Carpet Cleaning Inc. All rights reserved.</span><span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital.</a></span></div>
   </div>
-  <div class="wrap f-bottom">
-    <span>&copy; 2026 The Right Guy Carpet Cleaning Inc. All rights reserved.</span>
-    <span>Design by <a href="https://cleaningdigital.ca" target="_blank" rel="noopener">Cleaning Digital.</a></span>
-  </div>
+  <img class="fgen" src="assets/img/mascot.png" alt="" width="475" height="760" loading="lazy" aria-hidden="true">
 </footer>
 
-<div class="mbar"><a href="tel:6302644369">Call Now</a><a href="#contact">Book Online</a></div>
+<div class="mbar"><a class="btn btn-light" href="tel:+16302644369"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-phone"/></svg> Call now</a><a class="btn btn-primary" href="#contact">Book now</a></div>
 
-<script>
-// services accordion + image swap
-const items=document.querySelectorAll('#svcList li'), imgs=document.querySelectorAll('#svcFrame img');
-items.forEach(li=>li.querySelector('button').addEventListener('click',()=>{
-  items.forEach(x=>x.classList.remove('active')); li.classList.add('active');
-  imgs.forEach(i=>i.classList.remove('show')); imgs[+li.dataset.img].classList.add('show');
-}));
-// reveal
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-</script>
+<script src="assets/app.js"></script>
 </body>
 </html>

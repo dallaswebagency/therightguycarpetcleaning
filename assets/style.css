@@ -837,3 +837,15 @@ body.menu-open .mbar,body.menu-open .bbar{display:none}
 .brand img{height:88px;margin:4px 0 -18px}
 .foot img.fl{background:#fff;border-radius:18px;padding:10px 14px;width:220px}
 .rating .stars{display:none}
+
+/* floating mascot widget */
+@keyframes gfloat{50%{transform:translateY(-16px)}}
+.mascot{position:fixed;right:18px;bottom:18px;z-index:55;display:flex;align-items:flex-end;gap:8px;pointer-events:none}
+.mascot a{pointer-events:auto;display:block;width:86px;text-decoration:none;filter:drop-shadow(0 6px 0 rgba(5,44,81,.25));animation:gfloat 3.4s ease-in-out infinite;cursor:pointer}
+.mascot a img{display:block;width:100%;height:auto}
+.mascot .bub{pointer-events:auto;position:relative;background:#fff;border:3px solid var(--navy);border-radius:18px 18px 4px 18px;box-shadow:0 4px 0 var(--navy);padding:8px 14px;font:600 15px/1.2 var(--ui);color:var(--navy);max-width:170px;margin-bottom:46px;opacity:0;transform:translateY(8px) scale(.9);transition:opacity .3s,transform .3s;white-space:nowrap}
+.mascot.talk .bub{opacity:1;transform:none}
+@media (max-width:960px){.mascot{display:none}}
+body.menu-open .mascot{display:none}
+@media (prefers-reduced-motion:reduce){.mascot a{animation:none}}
+@media (min-width:961px){.fgen{display:none}}
